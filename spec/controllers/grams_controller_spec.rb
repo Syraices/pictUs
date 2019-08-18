@@ -2,6 +2,21 @@ require 'rails_helper'
 
 RSpec.describe GramsController, type: :controller do
 
+  describe "grams#destroy action" do
+    it "Should allow user to successfully destroy gram" do
+      gram = FactoryBot.create(:gram)
+      delete :destroy, params: {id: gram.id}
+      expect(response).to redirect_to root_path
+      gram = Gram.find_by_id(gram.id)
+      expect(gram).to eq nil
+    end
+
+    it "Should return 404 error if given wrong id" do
+      delete :destroy, params: {id: 'SPACEDUCK'}
+      expect(response).to have_http_status(:not_found)
+    end
+  end
+
   describe "grams#update action" do
     it " should allow users to successfully update grams" do
       user = FactoryBot.create(:user)
