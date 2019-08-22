@@ -1,1 +1,52 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+
+body{
+  background: image_url('bg.png');
+}
+.top-nav{
+  background: image_url('memphis-mini-dark.png');
+  border-bottom-color: #edeeee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  height: 70px;
+  padding-top: 15px;
+}
+.top-nav .add{
+  color: #797975;
+  margin-top: 10px;
+}
+.top-nav .add a{
+  font-weight: bold;
+  color: #797975;
+  font-size: 16px;
+  padding-left: 8px;
+}
+.brand{
+  color: #E3E85A;
+  font-family: 'Inconsolata', monospace;
+  font-size: 25px;
+  font-weight: 500;
+}
+.card{
+  background-color: #fff;
+  border-radius: .25rem;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+  border: 1px solid #e8e8e8;
+  margin-top: 40px;
+  padding: 0;
+}
+.handle{
+  margin: 10px;
+  color: #125688;
+  font-weight: bold;
+  font-size: 18px;
+}
+.card p, .card .message{
+  font-size: 18px;
+  margin: 20px;
+}
+.card.form{
+  padding: 20px;
+}
