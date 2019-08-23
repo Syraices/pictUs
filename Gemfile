@@ -67,8 +67,8 @@ group :development, :test do
 end
 
 gem 'jquery-rails'
-gem 'popper_js', '~> 1.11.1'
-gem 'bootstrap', '~> 4.0.0alpha6'
+gem 'popper_js', '~> 1.14.3'
+gem 'bootstrap', '~> 4.3.1'
 
 
 gem 'simple_form'
